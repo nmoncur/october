@@ -1,0 +1,9 @@
+.the-intro {
+  min-height: 100vh;
+  .overlay {
+    background: transparentize(white, .3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}

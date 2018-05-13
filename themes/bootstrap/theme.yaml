@@ -1,7 +1,0 @@
-name: Bootstrap v4 Starter Kit
-description: 'OctoberCMS theme built on Bootstrap 4.'
-previewImage: 'assets/dist/images/theme-preview.png'
-author:
-homepage: ''
-code: ''
-form: config/fields.yaml
