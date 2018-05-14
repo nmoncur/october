@@ -1,0 +1,6 @@
+plugin:
+    name: 'nickmoncur.whatthehealth::lang.plugin.name'
+    description: 'nickmoncur.whatthehealth::lang.plugin.description'
+    author: 'Nick Moncur'
+    icon: oc-icon-arrow-circle-up
+    homepage: ''
