@@ -14,7 +14,7 @@ description = "Default layout"
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="{{ ['assets/sass/app.scss']|theme }}" rel="stylesheet">
         {% styles %}
-        <title>{% if this.page.title %}{{ this.page.title }}{% else %}{{ this.theme.meta_title }}{% endif %} - {{ this.theme.website_name }}</title>
+        <title>{% if this.page.title %}{{ this.page.title }}{% else %}{{ this.theme.meta_title }}{% endif %} - {{ this.theme.config.name }}</title>
     </head>
     <body class="layout-{{ this.layout.id }} page-{{ this.layout.id }}">
         <div id="global-header" class="global-header">
