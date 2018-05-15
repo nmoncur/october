@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'activeTheme' => 'What the Health',
+    'activeTheme' => 'what-the-health',
 
     /*
     |--------------------------------------------------------------------------
