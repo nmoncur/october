@@ -2,7 +2,7 @@ branch-defaults:
   whatthehealth:
     environment: prod
 environment-defaults:
-  prod:
+  wth-production:
     branch: null
     repository: null
 global:
