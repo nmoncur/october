@@ -1,6 +1,6 @@
 branch-defaults:
   whatthehealth:
-    environment: prod
+    environment: wth-production
 environment-defaults:
   wth-production:
     branch: null
