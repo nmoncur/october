@@ -1,15 +1,15 @@
 branch-defaults:
   whatthehealth:
-    environment: what-the-health
+    environment: prod
 environment-defaults:
-  what-the-health:
+  prod:
     branch: null
     repository: null
 global:
-  application_name: october
+  application_name: what-the-health
   default_ec2_keyname: null
   default_platform: arn:aws:elasticbeanstalk:us-east-2::platform/PHP 7.1 running on
-    64bit Amazon Linux/2.6.6
+    64bit Amazon Linux/2.7.0
   default_region: us-east-2
   include_git_submodules: true
   instance_profile: null
