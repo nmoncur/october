@@ -1,0 +1,17 @@
+title = "Episodes"
+url = "/episodes"
+layout = "single"
+==
+function onStart()
+{
+$this['text'] = 'Current Episodes';
+}
+==
+
+<div class="page">
+  <div class="container">
+    <div class="row">
+      {% partial 'components/episode' %}
+    </div>
+  </div>
+</div>

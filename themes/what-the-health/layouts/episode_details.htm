@@ -1,0 +1,29 @@
+description = "Episode details layout"
+==
+<!doctype html>
+<html lang="en">
+
+    {% partial 'head' %}
+
+    <body class="layout_{{ this.layout.id }} page-{{ this.layout.id }}">
+        <div id="global-header" class="global-header">
+            {% partial 'components/header' %}
+        </div>
+        <div id="global-holder" class="global-holder">
+            <div class="the-intro-fold d-flex align-items-center">
+                <!--Spreaker integration-->
+            </div>
+
+            {% partial 'content' %}
+
+        </div>
+        <div id="global-footer" class="global-footer">
+            {% partial 'components/footer' %}
+        </div>
+
+        <script src="{{ ['assets/js/app.js'] | theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+    </body>
+
+</html>

@@ -1,0 +1,8 @@
+.callout-image {
+  background-color: $white;
+  position: relative;
+  .image {
+    background: url("../images/img_greybars@2x.png") center / cover;
+    min-height: 250px;
+  }
+}

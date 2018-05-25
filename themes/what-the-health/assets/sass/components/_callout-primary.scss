@@ -1,0 +1,17 @@
+.callout-primary {
+  background-color: $primary;
+  position: relative;
+  .row {
+    margin: 0;
+    padding: 75px 0;
+  }
+  .logo {
+    img {
+      max-height: 42px;
+    }
+  }
+  div {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}

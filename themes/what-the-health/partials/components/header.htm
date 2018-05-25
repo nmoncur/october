@@ -3,10 +3,10 @@ description = "Site Header"
 <div class="header fixed-top">
   <nav class="container">
     <div class="row text-center">
-      <div class="col col-md-6 col-lg-8 col-xl-9 logo"><a href="/"><img src="{{ 'assets/images/logo.jpg'|theme }}" alt=""></a></div>
-      <div class="col"><a>Episodes</a></div>
-      <div class="col"><a>About</a></div>
-      <div class="col"><a>Contact</a></div>
+      <div class="col col-sm-4 logo"><a href="/"><img src="{{ 'assets/images/img_logo@2x.png'|theme }}" alt=""></a></div>
+      <div class="col offset-sm-4"><a href="{{ url('/episodes') }}">Episodes</a></div>
+      <div class="col"><a href="{{ url('/about') }}">About</a></div>
+      <div class="col"><a href="{{ url('/contact') }}">Contact</a></div>
     </div>
   </nav>
 </div>

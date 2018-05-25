@@ -1,9 +1,13 @@
 .the-intro {
+  margin-top: 75px;
   min-height: 100vh;
-  .overlay {
-    background: transparentize(white, .3);
-    position: absolute;
-    width: 100%;
+  .fold-text {
     height: 100%;
+    max-width: 50%;
+    position: fixed;
+    top: 40%;
+  }
+  .subtext {
+    color: lighten($text-color, 30%);
   }
 }

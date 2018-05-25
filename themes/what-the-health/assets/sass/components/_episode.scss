@@ -1,0 +1,32 @@
+.episode-single {
+  @include box-shadow(2px 2px 5px 0px rgba(0,0,0,0.4));
+  border-radius: 10px;
+  margin: 50px auto;
+  overflow: hidden;
+  padding: 0;
+  .image-wrapper {
+    position: relative;
+    .image {
+      background-position: center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      min-height: 250px;
+    }
+    .play {
+      background: url('../images/btn_play_green.png') center no-repeat;
+      margin: auto;
+      min-height: 50px;
+      min-width: 50px;
+    }
+  }
+  .text {
+    color: $light-text;
+    padding: 0 15px;
+    .dot {
+      padding: 0 5px;
+    }
+    p {
+      margin: 15px 0 30px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+description = "homepage feature component"
+==
+<div class="feature-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1 class="brand">
+          Featured
+          <div class="d-none d-sm-block"></div>
+          <span class="space">Episodes</span>
+        </h1>
+      </div>
+      <div class="col-sm-6">
+        <p class="text-mute">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport
+          etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu
+          commun vocabules.</p>
+      </div>
+    </div>
+    <div class="row features">
+      {% partial 'components/episode' %}
+      {% partial 'components/episode' %}
+      {% partial 'components/episode' %}
+    </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a><button class="btn-primary">More Episodes</button></a>
+      </div>
+    </div>
+  </div>
+</div>
