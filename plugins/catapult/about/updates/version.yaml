@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table catapult_about_fields'
+    - builder_table_create_catapult_about_fields.php

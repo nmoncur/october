@@ -1,0 +1,15 @@
+.layout_contact {
+  color: lighten($text-color, 40%);
+  .page {
+    margin: 75px 0 125px;
+    .logo {
+      margin: 75px 0 15px;
+      img {
+        max-height: 78px;
+      }
+    }
+  }
+  .email {
+    margin-top: 25px;
+  }
+}

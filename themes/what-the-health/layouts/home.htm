@@ -1,0 +1,46 @@
+title = "Homepage Layout"
+
+[staticPage]
+useContent = 0
+default = 0
+==
+<?php
+function onStart()
+{
+  $this['text'] = 'Contact information';
+}
+?>
+==
+{variable name="FeatureText" label="Featured Episodes Text" type="text"}{/variable}
+
+<!doctype html>
+<html lang="en">
+
+{% partial 'head' %}
+
+<body class="layout-{{ this.layout.id }} page-{{ this.layout.id }}">
+<div id="global-header" class="global-header">
+  {% partial 'components/header' %}
+</div>
+<div id="global-holder" class="global-holder">
+
+  {% partial '/components/fold' %}
+
+  <div class="page">
+
+    {% partial '/components/feature' text=FeatureText %}
+
+  </div>
+
+</div>
+<div id="global-footer" class="global-footer">
+  {% partial 'components/footer' %}
+</div>
+
+{% partial 'scripts' %}
+
+</body>
+</html>
+
+
+

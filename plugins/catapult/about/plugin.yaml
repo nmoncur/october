@@ -1,0 +1,11 @@
+plugin:
+    name: 'catapult.about::lang.plugin.name'
+    description: 'catapult.about::lang.plugin.description'
+    author: Catapult
+    icon: oc-icon-certificate
+    homepage: ''
+navigation:
+    about-plugin:
+        label: About
+        url: catapult/about/aboutcontroller
+        icon: icon-info

@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: Name
+        span: left
+        placeholder: 'John Doe'
+        type: text
+    image_url:
+        label: 'Image (square, min 350px)'
+        mode: file
+        span: auto
+        type: mediafinder
+    description:
+        label: Bio
+        size: small
+        span: full
+        type: textarea

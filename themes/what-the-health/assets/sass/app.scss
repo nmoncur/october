@@ -16,14 +16,15 @@
 @import "components/fold-single";
 @import "components/footer";
 @import "components/header";
+@import "components/people_list";
 
 // Layouts
-@import "layouts/theme";
+@import "layouts/contact";
 @import "layouts/default";
+@import "layouts/home";
 @import "layouts/episode_details";
 @import "layouts/single";
+@import "layouts/theme";
 
 // Pages
 @import "pages/about";
-@import "pages/contact";
-@import "pages/home";

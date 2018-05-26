@@ -1,0 +1,62 @@
+title = "Contact page Layout"
+is_hidden = 0
+
+[staticPage]
+useContent = 1
+default = 0
+==
+<?php
+function onStart()
+{
+  $this['text'] = 'Contact information';
+}
+?>
+==
+<!doctype html>
+<html lang="en">
+
+{% partial 'head' %}
+
+<body class="layout_{{ this.layout.id }} page_{{ this.layout.id }}">
+<div id="global-header" class="global-header">
+  {% partial 'components/header' %}
+</div>
+<div id="global-holder" class="global-holder">
+  {% partial '/components/fold-single' text=text %}
+
+  <div class="page contact">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-8 offset-sm-2">
+          <div>
+            <h3 class="text-primary caps">what the health</h3>
+          </div>
+            {% page %}
+          <div>
+          </div>
+          <div class="logo">
+            <img src="{{ 'assets/images/icon_logomark_green@2x.png' | theme }}" alt="">
+          </div>
+          <div>
+            <div>{% placeholder addressOne title="Address Line 1" type="text" %}</div>
+            <div>{% placeholder addressTwo title="Address Line 2" type="text" %}</div>
+            <div>{% placeholder phone title="Phone" type="text" %}</div>
+            <div class="email text-primary">{% placeholder email title="Email" type="text" %}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div id="global-footer" class="global-footer">
+  {% partial 'components/footer' %}
+</div>
+
+{% partial 'scripts' %}
+
+</body>
+
+</html>
+
+

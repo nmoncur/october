@@ -1,0 +1,17 @@
+name: 'About Page Admin'
+modelClass: Catapult\About\Models\About
+form: $/catapult/about/models/about/fields.yaml
+defaultRedirect: catapult/about/aboutcontroller
+create:
+    title: 'Add a new person'
+    redirect: 'catapult/about/aboutcontroller/update/:id'
+    redirectClose: catapult/about/aboutcontroller
+    flashSave: Saved!
+update:
+    title: 'Updated person'
+    redirect: catapult/about/aboutcontroller
+    redirectClose: catapult/about/aboutcontroller
+    flashSave: Updated!
+    flashDelete: Deleted!
+preview:
+    title: 'Preview person'
