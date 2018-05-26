@@ -29,4 +29,17 @@
       margin-top: 10px;
     }
   }
+  .navbar-expand-lg {
+    .row {
+      min-width: 100%;
+    }
+    .logo {
+      img {
+        max-width: 250px;
+      }
+    }
+    button {
+      border-color: transparent;
+    }
+  }
 }

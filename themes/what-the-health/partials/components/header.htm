@@ -1,12 +1,38 @@
 description = "Site Header"
 ==
 <div class="header fixed-top">
-  <nav class="container">
+  <!--tablet/desktop nav-->
+  <nav class="d-none d-md-block container">
     <div class="row text-center">
-      <div class="col col-sm-4 logo"><a href="/"><img src="{{ 'assets/images/img_logo@2x.png'|theme }}" alt=""></a></div>
-      <div class="col offset-sm-4"><a href="{{ url('/episodes') }}">Episodes</a></div>
+      <div class="col col-md-4 logo"><a href="/"><img src="{{ 'assets/images/img_logo@2x.png'|theme }}" alt=""></a></div>
+      <div class="col offset-md-3"><a href="{{ url('/episodes') }}">Episodes</a></div>
       <div class="col"><a href="{{ url('/about') }}">About</a></div>
       <div class="col"><a href="{{ url('/contact') }}">Contact</a></div>
     </div>
   </nav>
+  <!--mobile nav-->
+  <nav class="d-md-none navbar navbar-expand-lg navbar-light">
+    <div class="row">
+      <div class="logo col-9 offset-1"><a href="/"><img src="{{ 'assets/images/img_logo@2x.png'|theme }}" alt=""></a></div>
+
+      <button class="navbar-toggler col-1 text-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav offset-1 mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a href="{{ url('/episodes') }}">Episodes</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('/about') }}">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('/contact') }}">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
 </div>

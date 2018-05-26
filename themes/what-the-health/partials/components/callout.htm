@@ -6,7 +6,11 @@
       <div class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4">
         <p class="text-white">Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam</p>
       </div>
-      <div class="btn btn-default">About Us</div>
+      {% if this.page.id is same as('about') %}
+        <a href="{{ url('/episodes') }}" class="btn btn-default">Episodes</a>
+      {% else %}
+        <a href="{{ url('/about') }}" class="btn btn-default">About Us</a>
+      {% endif %}
     </div>
   </div>
 </div>

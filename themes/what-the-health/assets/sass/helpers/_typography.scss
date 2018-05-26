@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.googleapis.com/css?family=Montserrat') format('sans-serif');
+}
+
 a {
   @include transition(color .2s ease-in);
   color: $primary !important;

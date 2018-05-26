@@ -4,3 +4,14 @@
     padding-left: 10%;
   }
 }
+@include media-breakpoint-down(md) {
+  .feature-wrapper {
+    .features {
+      .feature {
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+}

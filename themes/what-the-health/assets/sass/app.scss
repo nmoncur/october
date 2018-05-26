@@ -1,16 +1,13 @@
-// -------------------------------------------------------------------------------- //
-// Options
-// -------------------------------------------------------------------------------- //
+// Bootstrap
+@import "vendor/bootstrap/bootstrap";
 
-// Helpers:
-// -------------------------------------------------------------------------------- //
+// Helpers
 @import "helpers/colors";
 @import "helpers/mixins";
 @import "helpers/buttons";
 @import "helpers/typography";
 
-// Components:
-// -------------------------------------------------------------------------------- //
+// Components
 @import "components/callout-image";
 @import "components/callout-primary";
 @import "components/episode";
@@ -20,19 +17,13 @@
 @import "components/footer";
 @import "components/header";
 
-// Layouts:
-// -------------------------------------------------------------------------------- //
+// Layouts
+@import "layouts/theme";
 @import "layouts/default";
 @import "layouts/episode_details";
 @import "layouts/single";
 
-// -------------------------------------------------------------------------------- //
-// Pages:
-// -------------------------------------------------------------------------------- //
+// Pages
 @import "pages/about";
 @import "pages/contact";
 @import "pages/home";
-
-// -------------------------------------------------------------------------------- //
-// Partials:
-// -------------------------------------------------------------------------------- //

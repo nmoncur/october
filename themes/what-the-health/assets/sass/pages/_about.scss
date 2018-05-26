@@ -1,8 +1,6 @@
 .about {
   .picture {
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
+    @include border-radius(100%);
     max-width: 250px;
     min-height: 250px;
     position: relative;
@@ -15,5 +13,10 @@
   }
   p {
     margin-top: 25px;
+  }
+  @include media-breakpoint-down(sm) {
+    h3 {
+      margin-top: 25px;
+    }
   }
 }

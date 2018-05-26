@@ -3,19 +3,22 @@ description = "Initial load view for above the fold"
 <div class="the-intro d-flex align-items-center" style="background: url({{ 'assets/images/img_hero.jpg' | theme }}) center / cover fixed;">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 align-items-center">
+      <div class="col-md-6 align-items-center">
         <div class="fold-text">
           <h5>Latest Episode</h5>
           <h1>Episode 15: A Lesson to Learn Over & Over</h1>
           <div class="row">
-            <div class="col-sm-11">
+            <div class="col-md-11">
               <p class="subtext">
                 Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic regulari quam ti del coalescent lingues.
               </p>
             </div>
           </div>
           <div>
-            <h6>play episode</h6>
+            <div class="play-wrapper">
+              <a href="{{ url('/episodes/details') }}"><img src="{{ 'assets/images/btn_play_green@2x.png' | theme }}" alt=""></a>
+              <h6>play episode</h6>
+            </div>
           </div>
         </div>
       </div>

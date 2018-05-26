@@ -1,6 +1,6 @@
 .the-intro {
   margin-top: 75px;
-  min-height: 100vh;
+  min-height: 85vh;
   .fold-text {
     height: 100%;
     max-width: 50%;
@@ -9,5 +9,19 @@
   }
   .subtext {
     color: lighten($text-color, 30%);
+  }
+  .play-wrapper {
+    img {
+      max-height: 50px;
+    }
+    h6 {
+      display: inline;
+      padding: 13px 10px 0;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .fold-text {
+      max-width: 540px;
+    }
   }
 }
