@@ -1,4 +1,6 @@
 description = "homepage feature component"
+
+[EpisodesList]
 ==
 <div class="feature-wrapper">
   <div class="container">
@@ -14,15 +16,13 @@ description = "homepage feature component"
         <p class="text-mute">{{ text }}</p>
       </div>
     </div>
-    <div class="row features">
-      {% partial 'components/episode' %}
-      {% partial 'components/episode' %}
-      {% partial 'components/episode' %}
+    <div class="features">
+      {% component 'EpisodesList' maxItems=3 %}
     </div>
     </div>
     <div class="row">
       <div class="col text-center">
-        <a><button class="btn-primary">More Episodes</button></a>
+        <a href="{{ url('/episodes') }}"><button class="btn-primary">More Episodes</button></a>
       </div>
     </div>
   </div>

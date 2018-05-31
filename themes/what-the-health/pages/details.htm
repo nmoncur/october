@@ -1,7 +1,18 @@
 title = "Episodes"
-url = "/episodes/details"
+url = "/episodes/:episode_id"
 layout = "episode_details"
 ==
+use Catapult\Episodes\Models\Episode;
+
+function onStart() {
+  $this['episode'] = Episode::where('id', $this->param('episode_id'))->first();
+
+  $response = file_get_contents('https://api.spreaker.com/v2/episodes/'.$this['episode']->episode_id);
+  $stats = json_decode($response);
+  $this['stats'] = $stats->response->episode;
+}
+==
+
 <div class="page">
   <div class="container">
     <div class="row">
@@ -10,13 +21,11 @@ layout = "episode_details"
       </div>
       <div class="col-sm-8">
         <div>
-          <h3 class="text-primary">Episode 4: Let's talk about Facebook Marketing</h3>
+          <h3 class="text-primary">{{ episode.title }}</h3>
         </div>
-        <div class="stats">5 days ago • 65 plays • 0 downloads</div>
+        <div class="stats">{{ stats.published_at | time_since }} • {{ stats.plays_count | number_format }} plays • {{ stats.downloads_count | number_format }} downloads</div>
         <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
+          {{ episode.description | raw }}
         </div>
       </div>
     </div>

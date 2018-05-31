@@ -1,22 +1,28 @@
 description = "Initial load view for above the fold"
 ==
+use Catapult\Episodes\Models\Episode;
+
+function onStart() {
+  $this['episode'] = Episode::orderBy('created_at', 'desc')->first();
+}
+==
 <div class="the-intro d-flex align-items-center" style="background: url({{ 'assets/images/img_hero.jpg' | theme }}) center / cover fixed;">
   <div class="container">
     <div class="row">
       <div class="col-md-6 align-items-center">
         <div class="fold-text">
           <h5>Latest Episode</h5>
-          <h1>Episode 15: A Lesson to Learn Over & Over</h1>
+          <h1>{{ episode.title }}</h1>
           <div class="row">
             <div class="col-md-11">
               <p class="subtext">
-                Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic regulari quam ti del coalescent lingues.
+                {{ episode.short_desc }}
               </p>
             </div>
           </div>
           <div>
             <div class="play-wrapper">
-              <a href="{{ url('/episodes/details') }}"><img src="{{ 'assets/images/btn_play_green@2x.png' | theme }}" alt=""></a>
+              <a href="/episodes/{{ episode.id }}"><img src="{{ 'assets/images/btn_play_green@2x.png' | theme }}" alt=""></a>
               <h6>play episode</h6>
             </div>
           </div>

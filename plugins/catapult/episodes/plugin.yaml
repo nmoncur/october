@@ -1,0 +1,11 @@
+plugin:
+    name: 'catapult.episodes::lang.plugin.name'
+    description: 'catapult.episodes::lang.plugin.description'
+    author: Catapult
+    icon: oc-icon-microphone
+    homepage: ''
+navigation:
+    episodes:
+        label: Episodes
+        url: catapult/episodes/episodescontroller
+        icon: icon-microphone

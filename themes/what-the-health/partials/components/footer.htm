@@ -11,11 +11,11 @@ description = "Site Footer"
             <div class="row text-center">
                 <div class="col-sm-6 offset-sm-3">
                     <div class="social">
-                        <a><img src="{{ 'assets/images/icon_fb@2x.png' | theme}}" alt=""></a>
-                        <a><img src="{{ 'assets/images/icon_tw@2x.png' | theme}}" alt=""></a>
-                        <a><img src="{{ 'assets/images/icon_rss@2x.png' | theme}}" alt=""></a>
-                        <a><img src="{{ 'assets/images/icon_insta@2x.png' | theme}}" alt=""></a>
-                        <a><img src="{{ 'assets/images/icon_goog@2x.png' | theme}}" alt=""></a>
+                        {% if(this.theme.facebook_url) %}<a href="{{ this.theme.facebook_url }}" target="_blank"><img src="{{ 'assets/images/icon_fb@2x.png' | theme}}" alt=""></a>{% endif %}
+                        {% if(this.theme.twitter_url) %}<a href="{{ this.theme.twitter_url }}" target="_blank"><img src="{{ 'assets/images/icon_tw@2x.png' | theme}}" alt=""></a>{% endif %}
+                        {% if(this.theme.rss_url) %}<a href="{{ this.theme.rss_url }}" target="_blank"><img src="{{ 'assets/images/icon_rss@2x.png' | theme}}" alt=""></a>{% endif %}
+                        {% if(this.theme.instagram_url) %}<a href="{{ this.theme.instagram_url }}" target="_blank"><img src="{{ 'assets/images/icon_insta@2x.png' | theme}}" alt=""></a>{% endif %}
+                        {% if(this.theme.google_url) %}<a href="{{ this.theme.google_url }}" target="_blank"><img src="{{ 'assets/images/icon_goog@2x.png' | theme}}" alt=""></a>{% endif %}
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@ description = "Site Footer"
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <small class="text-mute">Copyright {{ "now"|date("Y") }}. Built by Catapult</small>
+                    <small class="text-mute">Copyright {{ "now" | date("Y") }}. Built by Catapult</small>
                 </div>
             </div>
         </div>

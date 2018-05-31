@@ -1,0 +1,18 @@
+{% set episodes = __SELF__.episodes %}
+<div class="row">
+  {% for episode in episodes %}
+    <div class="col-sm-6 col-lg-4 feature">
+      <div class="episode-single">
+        <div class="image-wrapper">
+          <div class="image d-flex" style="background-image: url({{ episode.image_url | media }})">
+            <a class="play align-items-center" href="/episodes/{{ episode.id }}"></a>
+          </div>
+        </div>
+        <div class="text">
+          <h4 class="text-primary"><a href="/episodes/{{ episode.id }}">{{ episode.title }}</a></h4>
+          <p class="">{{ episode.short_desc }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -3,3 +3,31 @@ description: 'Theme for What the Health'
 author: Catapult
 homepage: 'http://nickmoncur.com'
 code: ''
+
+form:
+    fields:
+        facebook_url:
+            label: Facebook URL
+            comment: The URL to your Facebook page for the footer
+            placeholder: https://facebook.com/...
+            span: left
+        twitter_url:
+            label: Twitter URL
+            placeholder: https://twitter.com/...
+            comment: The URL to your Twitter page for the footer
+            span: right
+        rss_url:
+            label: RSS Feed URL
+            placeholder: http://www.spreaker.com/show/.../episodes/feed
+            comment: The URL to your RSS feed for the footer
+            span: left
+        instagram_url:
+            label: Instagram URL
+            placeholder: https://instagram.com/...
+            comment: The URL to your Instagram page for the footer
+            span: right
+        google_url:
+            label: Google Plus URL
+            placeholder: https://plus.google.com/...
+            comment: The URL to your Google Plus page for the footer
+            span: left

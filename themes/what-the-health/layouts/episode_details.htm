@@ -10,8 +10,8 @@ description = "Episode details layout"
             {% partial 'components/header' %}
         </div>
         <div id="global-holder" class="global-holder">
-            <div class="the-intro-fold d-flex align-items-center">
-                <!--Spreaker integration-->
+            <div class="the-intro-fold">
+                <a class="spreaker-player" href="https://www.spreaker.com/" data-resource="episode_id={{ episode.episode_id }}" data-theme="dark" data-autoplay="false" data-playlist="false" data-width="100%" data-height="200px">Listen to "{{ episode.title }}" on Spreaker.</a><script async src="https://widget.spreaker.com/widgets.js"></script>
             </div>
 
             {% partial 'content' %}

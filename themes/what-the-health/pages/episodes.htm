@@ -1,6 +1,8 @@
 title = "Episodes"
 url = "/episodes"
 layout = "single"
+
+[EpisodesList]
 ==
 function onStart()
 {
@@ -10,8 +12,6 @@ $this['text'] = 'Current Episodes';
 
 <div class="page">
   <div class="container">
-    <div class="row">
-      {% partial 'components/episode' %}
-    </div>
+    {% component 'EpisodesList' %}
   </div>
 </div>

@@ -1,0 +1,29 @@
+fields:
+    title:
+        label: 'Episode Title'
+        span: auto
+        required: 1
+        type: text
+    episode_id:
+        label: 'Episode ID'
+        span: auto
+        placeholder: 'Pasted from Spreaker'
+        required: 1
+        type: text
+    short_desc:
+        label: 'Short Description'
+        span: left
+        placeholder: ''
+        type: text
+        comment: 'If left blank, the beginning of the description will be used for introduction'
+    image_url:
+        label: 'Image URL'
+        mode: file
+        span: auto
+        type: mediafinder
+        comment: 'Logo will be used as default if there''s no image'
+    description:
+        label: Description
+        size: large
+        span: full
+        type: richeditor

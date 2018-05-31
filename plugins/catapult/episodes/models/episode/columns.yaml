@@ -1,0 +1,25 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    episode_id:
+        label: 'Episode ID'
+        type: text
+        searchable: false
+        sortable: true
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    short_desc:
+        label: 'Short Description'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Created At'
+        type: datetime
+        sortable: true

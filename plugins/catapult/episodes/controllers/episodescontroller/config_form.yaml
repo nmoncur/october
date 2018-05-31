@@ -1,0 +1,14 @@
+name: 'Episode Details'
+modelClass: Catapult\Episodes\Models\Episode
+form: $/catapult/episodes/models/episode/fields.yaml
+defaultRedirect: catapult/episodes/episodescontroller
+create:
+    redirect: 'catapult/episodes/episodescontroller/update/:id'
+    redirectClose: catapult/episodes/episodescontroller
+    flashSave: Created!
+update:
+    redirect: catapult/episodes/episodescontroller
+    redirectClose: catapult/episodes/episodescontroller
+    flashSave: Updated!
+    flashDelete: Deleted!
+preview: {  }
