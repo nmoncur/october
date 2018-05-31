@@ -12,6 +12,9 @@ a {
     text-decoration: none;
   }
 }
+p {
+  font-weight: 200;
+}
 h1 {
   color: $white;
   font-weight: 600;
@@ -49,6 +52,7 @@ h6 {
 }
 .text-mute {
   color: $light-text;
+  font-weight: 200;
 }
 .caps {
   text-transform: uppercase;

@@ -6,6 +6,9 @@
 }
 @include media-breakpoint-down(md) {
   .feature-wrapper {
+    .featured-text {
+      text-align: center;
+    }
     .features {
       .feature {
         &:nth-child(3) {

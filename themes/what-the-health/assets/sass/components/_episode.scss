@@ -1,6 +1,6 @@
 .episode-single {
   @include box-shadow(1px 2px 3px 0 rgba(0,0,0,0.1));
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 50px auto;
   overflow: hidden;
   padding: 0;
@@ -25,7 +25,11 @@
     .dot {
       padding: 0 5px;
     }
+    h4 {
+      font-size: 18px;
+    }
     p {
+      font-size: 14px;
       margin: 15px 0 30px;
     }
   }

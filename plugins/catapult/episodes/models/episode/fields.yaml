@@ -15,13 +15,11 @@ fields:
         span: left
         placeholder: ''
         type: text
-        comment: 'If left blank, the beginning of the description will be used for introduction'
     image_url:
         label: 'Image URL'
         mode: file
         span: auto
         type: mediafinder
-        comment: 'Logo will be used as default if there''s no image'
     description:
         label: Description
         size: large
